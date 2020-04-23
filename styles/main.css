@@ -26,14 +26,11 @@ header {
     height: 130px;
     margin-top: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
    
 }
 
-table {
-    max-width: 100%;
-}
 
 main {
     margin-top: 10px;
@@ -54,7 +51,7 @@ footer {
     height: 90px;
     width: 100%;
     color: whitesmoke;
-    font-size: 1em;
+    font-size: small ;
     display: flex;
     align-items: center;
     justify-content: center;
