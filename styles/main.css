@@ -12,6 +12,7 @@ Body {
     max-width: 900px;
     padding-left: 10px;
     padding-right: 10px;
+    margin: 0 auto;
     }
 #familypic{
     margin-top: 20px;
@@ -39,7 +40,7 @@ main {
     margin-right: 20px;
     margin-bottom: 30px;
 }
-#homename{
+#IndexMainName{
     font-size: 3em;
     margin-bottom: 20%;
     margin-left: 20px;
@@ -58,4 +59,10 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+#indexpic {
+    max-width: 200px;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px #CBFFCE;
+    border-radius: 0 12px 0 0;
 }
