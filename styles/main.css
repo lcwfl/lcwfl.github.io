@@ -45,7 +45,7 @@ main {
     margin-bottom: 20%;
     margin-left: 20px;
     text-align: center;
-    color: white;
+    color: #6E955B;
 }
 
 footer {
@@ -53,7 +53,7 @@ footer {
     background-color: #C2A86B;
     height: 90px;
     width: 100%;
-    color: white;
+    color:#6E955B;
     font-size: 1em;
     display: flex;
     align-items: center;
