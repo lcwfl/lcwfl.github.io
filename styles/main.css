@@ -9,6 +9,9 @@ Body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
+    max-width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
     }
 #familypic{
     margin-top: 20px;
