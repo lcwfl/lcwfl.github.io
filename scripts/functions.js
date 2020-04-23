@@ -1,3 +1,4 @@
+var modifieddate = new Date();
 var copyyear = modifieddate.getfullyear;
 
 function Index(){
