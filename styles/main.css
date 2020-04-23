@@ -18,7 +18,7 @@ Body {
  
 header {
     border-radius: 12px;
-    background-color: darkcyan;
+    background-color: #C2A86B;
     height: 130px;
     margin-top: 10px;
     display: flex;
@@ -36,11 +36,17 @@ main {
     margin-right: 20px;
     margin-bottom: 30px;
 }
-
+#homename{
+    font-size: 3em;
+    margin-bottom: 20%;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+}
 
 footer {
     border-radius: 12px;
-    background-color: #005C5C;
+    background-color: #C2A86B;
     height: 90px;
     width: 100%;
     color: white;
