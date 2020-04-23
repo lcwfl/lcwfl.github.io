@@ -26,9 +26,9 @@ header {
     height: 130px;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    text-align: center;
+   
 }
 
 table {
@@ -44,7 +44,7 @@ main {
 #IndexMainName{
     font-size: 2em;
     margin-bottom: 20%;
-    
+    justify-content: center;
     color: whitesmoke;
 }
 
