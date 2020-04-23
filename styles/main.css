@@ -15,14 +15,14 @@ Body {
     margin: 0 auto;
     }
 #familypic{
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 22px;
+    margin-right: 22px;
   }
 
  
 header {
     border-radius: 12px;
-    background-color: #C2A86B;
+    background-color: #196A73;
     height: 130px;
     margin-top: 10px;
     display: flex;
@@ -45,15 +45,15 @@ main {
     margin-bottom: 20%;
     margin-left: 20px;
     text-align: center;
-    color: #6E955B;
+    color: whitesmoke;
 }
 
 footer {
     border-radius: 12px;
-    background-color: #C2A86B;
+    background-color: #196A73;
     height: 90px;
     width: 100%;
-    color:#6E955B;
+    color: whitesmoke;
     font-size: 1em;
     display: flex;
     align-items: center;
