@@ -42,8 +42,8 @@ main {
 #IndexMainName{
     font-size: 2em;
     margin-bottom: 20%;
-    justify-content: center;
     color: whitesmoke;
+    text-align: center;
 }
 
 footer {
@@ -64,6 +64,7 @@ footer {
     box-shadow: 5px 5px 15px 5px #CBFFCE;
     border-radius: 0 12px 0 0;
 }
-#h1 h2 {
+h1 h2 h3 {
     font-family: 'Spartan', sans-serif;
+    text-align: center;
 }
