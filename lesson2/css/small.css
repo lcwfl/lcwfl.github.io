@@ -28,7 +28,7 @@ h1 {
     font-family: 'Spartan', sans-serif;
     text-align: center;
     font-size: 3em;
-    padding-top: 12px;
+    padding-top: 10px;
     color: whitesmoke
 }
 h2{
@@ -37,7 +37,7 @@ h2{
     color: whitesmoke
 }
 h3{
-padding-bottom: 8em;
+padding-bottom: 7em;
 }
 
 section {
@@ -49,3 +49,11 @@ section {
 img {
         margin-top: 8px;
       }
+p {
+    font-size: 1.25em;
+    color: whitesmoke;
+}
+a {
+    font-size: 1.75em;
+    color: royalblue;
+}
