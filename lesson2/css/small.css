@@ -5,7 +5,9 @@ header {
     justify-content: space-between;
     color: whitesmoke; 
     text-align: center;
-   
+    font-weight: bold;
+    font-size: 2em;
+       
 }
 main {
     display: grid;
@@ -27,7 +29,7 @@ footer {
 h1, h2 {
     font-family: 'Spartan', sans-serif;
     text-align: center;
-    font-size: 3em;
+    font-size: 12em;
     padding-top: 5px;
     color: whitesmoke
     }
@@ -41,16 +43,16 @@ section {
     border-radius: 15px;
     text-align: center;
     margin: 10px;
-    padding: 5px 0px 5px 0px;
+    
   }
 .pic {
     display: block;
     border-radius: 12px;
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     box-shadow: 5px 5px 15px 5px #CBFFCE;
       }
 p {
