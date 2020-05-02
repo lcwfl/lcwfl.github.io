@@ -6,7 +6,7 @@ header {
     color: whitesmoke; 
     text-align: center;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 4em;
        
 }
 main {
@@ -25,18 +25,18 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+    }
 h1, h2 {
     font-family: 'Spartan', sans-serif;
     text-align: center;
-    font-size: 12em;
-    padding-top: 5px;
+    font-size: 2.5em;
+    
     color: whitesmoke
     }
 h3{
-padding-bottom: 7em;
-font-size: 2em;
-color: whitesmoke;
+padding-bottom: 5em;
+font-size: 1.75em;
+color: burlywood;
 }
 
 section {
@@ -48,13 +48,13 @@ section {
   }
 .pic {
     display: block;
-    border-radius: 12px;
+    border-radius: 8px;
     max-width: 80%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    box-shadow: 5px 5px 15px 5px #CBFFCE;
+    
       }
 p {
     font-size: 1.25em;
@@ -62,5 +62,8 @@ p {
 }
 a {
     font-size: 1.75em;
-    color: royalblue;
+    color: chartreuse;
+}
+.footer{
+    font-size: small;
 }
