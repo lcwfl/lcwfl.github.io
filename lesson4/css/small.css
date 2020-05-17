@@ -116,7 +116,7 @@ h2{
     text-align: center;
     text-decoration: none;
     color: white;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    
 }
 .navmenu a:hover{
 color:#e9c46a;
@@ -125,6 +125,6 @@ color:#e9c46a;
     display: block;
 }
 .navmenu active a{
-background-color: rgba(0,0,0,0.2);
+
 color: black
 }
