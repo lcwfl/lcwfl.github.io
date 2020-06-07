@@ -1,0 +1,70 @@
+Body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    max-width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    }
+#familypic{
+    margin-top: 22px;
+    margin-right: 22px;
+  }
+
+ 
+header {
+    border-radius: 12px;
+    background-color: #196A73;
+    height: 130px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center; 
+   
+}
+
+
+main {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+#IndexMainName{
+    font-size: 2em;
+    margin-bottom: 20%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer {
+    border-radius: 12px;
+    background-color: #196A73;
+    height: 90px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: small ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#indexpic {
+    max-width: 200px;
+    height: auto;
+    box-shadow: 5px 5px 15px 5px #CBFFCE;
+    border-radius: 0 12px 0 0;
+}
+h1 h2 h3 {
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+}
