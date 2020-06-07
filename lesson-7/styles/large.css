@@ -34,10 +34,18 @@
     display: none;
 }
 
-}
+
 nav ul{
     display: flex;
 }
 nav li{
     flex: 1 1 100%;
 } 
+section {
+    grid-template-columns: repeat( 3, 1fr);
+}
+figure:hover {
+    box-shadow: 1px 1px 8px 5px turquoise;
+}
+
+}
