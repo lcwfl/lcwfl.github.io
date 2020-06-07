@@ -1,7 +1,6 @@
 Body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
     word-spacing: 2px;
     color: #000000;
     font-weight: normal;
@@ -9,62 +8,165 @@ Body {
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    max-width: 900px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
     }
-#familypic{
-    margin-top: 22px;
-    margin-right: 22px;
-  }
-
  
-header {
-    border-radius: 12px;
-    background-color: #196A73;
-    height: 130px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center; 
-   
+h1, h2, h3, h4, h5 {
+    font-family: sans-serif, 'Open Sans';
 }
-
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ }
 
 main {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    max-width: 900px;
 }
-#IndexMainName{
-    font-size: 2em;
-    margin-bottom: 20%;
-    color: whitesmoke;
+.cityheader{
+
     text-align: center;
 }
-
 footer {
     border-radius: 12px;
-    background-color: #196A73;
+    background-color: #0077b6;
     height: 90px;
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     color: whitesmoke;
     font-size: small ;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
-#indexpic {
-    max-width: 200px;
-    height: auto;
-    box-shadow: 5px 5px 15px 5px #CBFFCE;
-    border-radius: 0 12px 0 0;
+footer a:link {
+    color: darkblue;
 }
-h1 h2 h3 {
-    font-family: 'Spartan', sans-serif;
+footer a:visited{
+    color: white;
+}
+nav {
+    background-color: #0077b6;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul a {
+    display: inline;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+li {
+    display: inline;
+}
+#icon{
+    width: 35px;
+    height: 35px;
+}
+#largelogo{
+    width: 150pm;
+    height: 150px;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 25px;
+}
+.tdtitle{
+    font-size: medium;
+    font-weight: bold;
+}
+.stagingcontent{
+    display: block;
+    margin: 10px auto;
+    border: medium;
+    padding: 15px;
+    font-style: italic;
+    background-color: #90e0ef;
+}
+.navmenu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.navmenu li{
+    display: none;
+}
+.navmenu li:first-child{
+    display:block;
+}
+.navmenu a{
+    display: block;
+    padding: .8rem 2%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.navmenu a:hover{
+color:#e9c46a;
+}
+.responsive li{
+    display: block;
+}
+.navmenu active a{
+
+color: black
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gmap{
+    grid-column: 1/3;
+    grid-row: 2;
+    width: 80%;
+}
+.coninfo{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.article{
+    display: grid;
+}
+.articleimg{
+    width: 70%;
+    height: 70%;
+    grid-column: 2;
+}
+.articletopic{
+    grid-column: 1;
+}
+
+#herosum{
+    width: 95%;
+    position: relative;
+}
+#herosum img{
+    width: 100%;
+}
+#heroweathersummary{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: small;
+    padding: 10px;
+    border-radius: 10px;
 }
