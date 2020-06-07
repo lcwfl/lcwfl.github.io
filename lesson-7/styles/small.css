@@ -199,3 +199,6 @@ img {
     filter: blur(0em);
     transition: filter .5s;
   }
+.galtitle {
+    text-align: center;
+}
