@@ -1,0 +1,41 @@
+@media only screen and (min-width: 35rem){
+ 
+    header img{
+        width: 100%;
+ }
+ nav button {
+     display: none
+ }
+ 
+ .navigation {
+     display: flex;
+     flex-direction: row;
+ }
+ .navigation li {
+     display: block; 
+     flex: 1 1 auto;
+ }
+ .navigation a {
+     text-align: center;
+ }
+ .navigation li:first-child {
+     display: none;
+ }
+ .headings h1{font-size: 48px
+ }
+ .motto{
+     letter-spacing: 1.5pt;
+     font-size: medium;
+     margin-left: 15px;
+ } 
+  .gmap{
+      grid-column: 1;
+      grid-row: 1;
+  }
+  .coninfo{
+    grid-column: 2; 
+    grid-row: 1;
+     
+  }  
+}
+ 
