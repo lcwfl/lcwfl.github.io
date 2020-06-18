@@ -14,14 +14,12 @@ fetch(requestURL)
         let birthdate = document.createElement('p');
         let bornAt = document.createElement('p');
         let photo = document.createElement('img');
-
  
         birthdate.textContent = 'Date of Birth: ' + prophets[i].birthdate;
         bornAt.textContent = 'Place of Birth: ' + prophets[i].birthplace;
         photo.setAttribute('src', prophets[i].imageurl);
         photo.setAttribute('alt', prophets[i].name + prophets[i].lastname + " - " + prophets[i].order);
         title.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-
 
         card.appendChild(title);
         card.appendChild(birthdate);

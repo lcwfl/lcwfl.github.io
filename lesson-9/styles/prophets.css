@@ -1,0 +1,276 @@
+Body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    }
+ 
+h1, h2, h3, h4, h5 {
+    font-family: sans-serif, 'Open Sans';
+}
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ }
+
+.cityheader{
+
+    text-align: center;
+}
+footer {
+    border-radius: 12px;
+    background-color: #0077b6;
+    height: 90px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: small ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+footer a:link {
+    color: darkblue;
+}
+footer a:visited{
+    color: white;
+}
+nav {
+    background-color: #0077b6;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul a {
+    display: inline;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+li {
+    display: inline;
+}
+#icon{
+    width: 35px;
+    height: 35px;
+}
+#largelogo{
+    width: 150pm;
+    height: 150px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+
+}
+.tdtitle{
+    font-size: medium;
+    font-weight: bold;
+}
+.stagingcontent{
+    display: block;
+    margin: 10px auto;
+    border: medium;
+    padding: 15px;
+    font-style: italic;
+    background-color: #90e0ef;
+}
+.navmenu{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.navmenu li{
+    display: none;
+}
+.navmenu li:first-child{
+    display:block;
+}
+.navmenu a{
+    display: block;
+    padding: .8rem 2%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.navmenu a:hover{
+color:#e9c46a;
+}
+.responsive li{
+    display: block;
+}
+.navmenu active a{
+
+color: black
+}
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gmap{
+    grid-column: 1/3;
+    grid-row: 2;
+    width: 80%;
+}
+.coninfo{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.article{
+    display: grid;
+}
+.articleimg{
+    width: 70%;
+    height: 70%;
+    grid-column: 2;
+}
+.articletopic{
+    grid-column: 1;
+}
+
+#herosum{
+    width: 95%;
+    position: relative;
+}
+#herosum img{
+    width: 100%;
+}
+#heroweathersummary{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: small;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 9px;
+   
+}
+section{
+    background-color: teal;
+    border: turquoise;
+}
+p {
+    text-align: center;
+    line-height: .65px;
+}
+img {
+    display: block;
+    margin: auto auto 10 auto;
+    box-shadow: black;
+    max-width: 225px;
+}
+@media only screen and (min-width: 35rem){
+ 
+    header img{
+        width: 100%;
+ }
+ nav button {
+     display: none
+ }
+ 
+ .navigation {
+     display: flex;
+     flex-direction: row;
+ }
+ .navigation li {
+     display: block; 
+     flex: 1 1 auto;
+ }
+ .navigation a {
+     text-align: center;
+ }
+ .navigation li:first-child {
+     display: none;
+ }
+ .headings h1{font-size: 48px
+ }
+ .motto{
+     letter-spacing: 1.5pt;
+     font-size: medium;
+     margin-left: 15px;
+ } 
+  .gmap{
+      grid-column: 1;
+      grid-row: 1;
+  }
+  .coninfo{
+    grid-column: 2; 
+    grid-row: 1;
+     
+  }  
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+ 
+@media only screen and (min-width: 900px){
+ 
+    
+    header img{
+        width: 100%;
+ }
+ nav button {
+     display: none
+    }
+
+ .headings h1{font-size: 48px
+ }
+ .motto{
+     letter-spacing: 1.5pt;
+     font-size: medium;
+     margin-left: 17px;
+ }    	
+ .navmenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.navmenu li {
+    display: flex; 
+    flex: 1 1 100%;
+   
+}
+.navmenu a {
+    text-align: center;
+}
+.navmenu li:first-child {
+    display: none;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
