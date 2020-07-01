@@ -170,3 +170,33 @@ color: black
     padding: 10px;
     border-radius: 10px;
 }
+.cards {
+	margin: 10px auto;
+	display:grid;
+	grid-template-columns: 1fr; 
+	grid-gap: 5px;
+	text-align: center;
+}
+.cards img{
+	height: 300px;
+	width: 90%;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+.cards h2{
+	margin-bottom: 2px;
+}
+.cards span{
+	display: block;
+	font-size: .9rem;
+	font-style: italic;
+	height: 2rem;;
+}
+.cards p{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.cards section{
+	background-color: #F9B03D;
+	border-radius: 10px;
+}
