@@ -260,3 +260,6 @@ figcaption {
     grid-row: 3;
 
 }
+#imagesrc, #imagesrc2, #imagesrc3, #imagesrc4, #imagesrc5 {
+    display: none;
+}

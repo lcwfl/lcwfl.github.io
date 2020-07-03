@@ -1,3 +1,4 @@
+const date = new Date();
 //Get day 1
 function getWeekDay5(date){
     //Create an array containing each day, starting with Friday.
@@ -51,11 +52,11 @@ function getWeekDay5(date){
     }
     
     //Fill in table with days of week
-    document.getElementById('day1').innerHTML = getWeekDay1(date);
-    document.getElementById('day2').innerHTML = getWeekDay2(date);
-    document.getElementById('day3').innerHTML = getWeekDay3(date);
-    document.getElementById('day4').innerHTML = getWeekDay4(date);
-    document.getElementById('day5').innerHTML = getWeekDay5(date);
+    document.getElementById('day-1').innerHTML = getWeekDay1(date);
+    document.getElementById('day-2').innerHTML = getWeekDay2(date);
+    document.getElementById('day-3').innerHTML = getWeekDay3(date);
+    document.getElementById('day-4').innerHTML = getWeekDay4(date);
+    document.getElementById('day-5').innerHTML = getWeekDay5(date);
     
     
     //Fetch JSON weather data from openweathermap
@@ -69,11 +70,11 @@ function getWeekDay5(date){
       
     
     //Fill in html with forecast data  
-    document.getElementById('fore1').textContent = Math.round(forecast.list[7].main.temp_max);
-    document.getElementById('fore2').textContent = Math.round(forecast.list[15].main.temp_max);
-    document.getElementById('fore3').textContent = Math.round(forecast.list[23].main.temp_max);
-    document.getElementById('fore4').textContent = Math.round(forecast.list[31].main.temp_max);
-    document.getElementById('fore5').textContent = Math.round(forecast.list[39].main.temp_max);
+    document.getElementById('fore-1').textContent = Math.round(forecast.list[7].main.temp_max);
+    document.getElementById('fore-2').textContent = Math.round(forecast.list[15].main.temp_max);
+    document.getElementById('fore-3').textContent = Math.round(forecast.list[23].main.temp_max);
+    document.getElementById('fore-4').textContent = Math.round(forecast.list[31].main.temp_max);
+    document.getElementById('fore-5').textContent = Math.round(forecast.list[39].main.temp_max);
   
     //Get icon1
   const imagesrc = 'https://openweathermap.org/img/w/' + forecast.list[7].weather[0].icon + '.png'; 
