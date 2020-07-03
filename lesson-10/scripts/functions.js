@@ -6,3 +6,6 @@ function Index(){
     document.getElementById("modified").innerHTML = "Last Updated: " + document.lastModified;
 
 };
+function toggleMenu() {
+    document.getElementsByClassName("navmenu")[0].classList.toggle("responsive");
+     }
