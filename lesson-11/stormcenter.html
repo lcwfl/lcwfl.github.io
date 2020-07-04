@@ -54,7 +54,7 @@
         <fieldset>
             <legend>Storm Information</legend>
             <label class="storminfo">Storm Date: <input type="date" name="date" ></label>
-            <label class="storminfo">Storm Type: <input list="stormType" type="list" name="stormType" ></label>
+            <label class="storminfo">Storm Type: <input list="stormType" sname="stormType" ></label>
             <datalist id="stormType">
                 <option value="Flash Flood">
                 <option value="Hail">
@@ -63,7 +63,7 @@
                 <option value="Tornado">
             </datalist>
             <label class="storminfo" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="updateRating(this.value)" onchange="updateRating(this.value)">
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="updateRating(this.value)" onchange="updateRating(this.value)">
                         <span id="ratingvalue">5</span>
             </label>
             <label class="storminfo">Storm Region:
