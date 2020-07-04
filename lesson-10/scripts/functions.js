@@ -9,3 +9,7 @@ function Index(){
 function toggleMenu() {
     document.getElementsByClassName("navmenu")[0].classList.toggle("responsive");
      }
+
+function updateRating(rating) {
+        document.getElementById("ratingvalue").innerHTML = rating;
+    }
