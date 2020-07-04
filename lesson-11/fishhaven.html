@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Comments go here -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lance Wilson">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="scripts/functions.js"></script>
+
+    <title>FL Weather Tracker</title>
+    <meta name="description"
+        content="Base website for the Weather Site Project for Lance Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+</head>
+<body onload="Index()">
+<header>
+    <img src="images/icon.png" id="icon" alt="FL Weather Tracker icon">
+    <section class="hdr">
+        <h1>FL Weather Tracker</h1>
+        <div class="motto">"Weather information on your terms"</div>
+    </section>
+</header>
+<nav>
+    <ul class="navmenu">
+        <li><a class="hammenu" onclick="toggleMenu()" href="#">&#9776; Menu</a></li> 
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    <main>
+    <h2 class="cityheader">Fish Haven, Idaho</h2>
+    <section id="herosum">
+        <img src="images/fish1.jpg" alt="Fish Haven">
+       <div id="heroweathersummary">
+        <ul class="current">
+            <li class="current_item"><h3>Current Conditions</h3></li>
+            <li class="current_item">Currently: <span id="current">hot</span>&#8457;</li>
+            <li class="current_item">High: <span id="high">80</span>&#8457;</li>
+            <li class="current_item">Wind Chill: <span id="Chill"></span></li>
+            <li class="current_item">Humidity: <span id="hum"></span>%</li>
+            <li class="current_item">Wind Speed: <span id="speed"></span></li>
+            <li class="current_item">Condition: <span id="condition"></span></li>
+            <li class="current_item">Feels like: <span id="feelsLike"></span>&#8457;</li>
+        </ul>
+        </div>  
+    </section>
+    <section class="upcoming">
+        <h3>Upcoming Events</h3>
+        <hr id="underevents">
+        <div class="upcoming"></div>
+    </section>
+   <div id="forecast">
+     <h2>Fish Haven 5 Day Forecast</h2>
+     <table>
+        <tr>
+            <th id="day-1"></th>
+            <th id="day-2"></th>
+            <th id="day-3"></th>
+            <th id="day-4"></th>
+            <th id="day-5"></th>
+        </tr>
+        <tr>
+            <td><span id="fore-1"></span>&#8457;<span id="imagesrc"></span> &nbsp; <img src="#" alt="#" id="icon1" class="icon"></td>
+            <td><span id="fore-2"></span>&#8457;<span id="imagesrc2"></span> &nbsp; <img src="#" alt="#" id="icon2" class="icon"></td>
+            <td><span id="fore-3"></span>&#8457;<span id="imagesrc3"></span> &nbsp; <img src="#" alt="#" id="icon3" class="icon"></td>
+            <td><span id="fore-4"></span>&#8457;<span id="imagesrc4"></span> &nbsp; <img src="#" alt="#" id="icon4" class="icon"></td>
+            <td><span id="fore-5"></span>&#8457;<span id="imagesrc5"></span> &nbsp; <img src="#" alt="#" id="icon5" class="icon"></td>
+        </tr>
+    </table>
+</div>
+    <article class="article">
+        <div class="articletopic">
+           <h3>About Fish Haven</h3> 
+           <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains 
+            and bordered by the shores of a vast natural lake.</p>
+
+            <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's 
+            bright blue waters with water skis or fishing poles.</p>
+            
+            <p>But they don't live there. It's different living in Fish Haven.</p>
+            
+            <p>The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains.</p>
+            
+            <p>It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the road. But people call it a town even though there 
+            isn't a city council, just the Bear Lake County Commission that oversees development there.</p>
+            
+            <p>Only 50 to 100 people call it home, depending on the weather.</p>
+            
+            <p><i>This article is information is from "Little Fish Haven, Idaho, is paradise for residents" orginally published December 26, 2000.
+                <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents" target="_blank">SRC</a>
+            </i></p>
+            
+        </div>
+        <img class="articleimg" src="images/fish2.jpg" alt="Fish Haven">
+        
+    </article>
+      
+    <section id="contact">
+        <div class="gmap"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9966.752287302994!2d-111.3975502790593!3d42.040324345259656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1593831099898!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>v
+        </div>
+         <div class="coninfo">Contact Information
+         <h3>FL Weather Tracker</h3>
+         <p>123 FL Weather Dr</p>
+         <p>Kissimmee, FL 34759</p>
+         <p>407-555-1212</p>
+        </div>
+
+    </section>
+    
+
+    </main>
+
+
+<footer>
+    <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
+            Online Learning</a></div>
+    <br>
+    <span id="modified"></span>
+</footer>
+<script src="scripts/fishhaven-current.js"></script>
+<script src="scripts/fishhaven-forecast.js"></script>
+</body>
+</html>

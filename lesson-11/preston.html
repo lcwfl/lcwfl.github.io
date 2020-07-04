@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Comments go here -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lance Wilson">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <script src="scripts/functions.js"></script>
+
+    <title>FL Weather Tracker</title>
+    <meta name="description"
+        content="Base website for the Weather Site Project for Lance Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+</head>
+<body onload="Index()">
+<header>
+    <img src="images/icon.png" id="icon" alt="FL Weather Tracker icon">
+    <section class="hdr">
+        <h1>FL Weather Tracker</h1>
+        <div class="motto">"Weather information on your terms"</div>
+    </section>
+</header>
+<nav>
+    <ul class="navmenu">
+        <li><a class="hammenu" onclick="toggleMenu()" href="#">&#9776; Menu</a></li> 
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    <main>
+    <h2 class="cityheader">Preston, Idaho</h2>
+    <section id="herosum">
+        <img src="images/preston2.jpg" alt="Preston Idaho">
+       <div id="heroweathersummary">
+        <ul class="current">
+            <li class="current_item"><h3>Current Conditions</h3></li>
+            <li class="current_item">Currently: <span id="current">hot</span>&#8457;</li>
+            <li class="current_item">High: <span id="high">80</span>&#8457;</li>
+            <li class="current_item">Wind Chill: <span id="Chill"></span></li>
+            <li class="current_item">Humidity: <span id="hum"></span>%</li>
+            <li class="current_item">Wind Speed: <span id="speed"></span></li>
+            <li class="current_item">Condition: <span id="condition"></span></li>
+            <li class="current_item">Feels like: <span id="feelsLike"></span>&#8457;</li>
+        </ul>
+        </div>  
+    </section>
+    <section class="upcoming">
+            <h3>Upcoming Events</h3>
+            <hr id="underevents">
+            <div class="upcoming"></div>
+    </section>
+   <div id="forecast">
+     <h2>Preston 5 Day Forecast</h2>
+     <table>
+        <tr>
+            <th id="day-1"></th>
+            <th id="day-2"></th>
+            <th id="day-3"></th>
+            <th id="day-4"></th>
+            <th id="day-5"></th>
+        </tr>
+        <tr>
+            <td><span id="fore-1"></span>&#8457;<span id="imagesrc"></span> &nbsp; <img src="#" alt="#" id="icon1" class="icon"></td>
+            <td><span id="fore-2"></span>&#8457;<span id="imagesrc2"></span> &nbsp; <img src="#" alt="#" id="icon2" class="icon"></td>
+            <td><span id="fore-3"></span>&#8457;<span id="imagesrc3"></span> &nbsp; <img src="#" alt="#" id="icon3" class="icon"></td>
+            <td><span id="fore-4"></span>&#8457;<span id="imagesrc4"></span> &nbsp; <img src="#" alt="#" id="icon4" class="icon"></td>
+            <td><span id="fore-5"></span>&#8457;<span id="imagesrc5"></span> &nbsp; <img src="#" alt="#" id="icon5" class="icon"></td>
+        </tr>
+    </table>
+</div>
+    <article class="article">
+        <div class="articletopic">
+           <h3>What to do in Preston</h3> 
+           <p>Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing is great. You can travel 
+            down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful winter wonderland ever, ending up at Bloomington or Bear Lake.</p>
+
+            <p>Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as well as fishing, boating, water-skiing 
+            or just camping at our 10 reservoirs. There are three swimming resorts close by and also a new swimming pool in town.
+            </p>
+            <a href="https://www.prestonidaho.net/discover-the-natural-beauty-resorces-of-citys-outdoors/" target="_blank">SRC</a>
+        </div>
+        <img class="articleimg" src="images/preston1.jpg" alt="Preston">
+        
+    </article>
+      
+    <section id="contact">
+        <div class="gmap"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853416045!2d-111.91534433438153!3d42.09974162641989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590197322627!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+        </div>
+         <div class="coninfo">Contact Information
+         <h3>FL Weather Tracker</h3>
+         <p>123 FL Weather Dr</p>
+         <p>Kissimmee, FL 34759</p>
+         <p>407-555-1212</p>
+        </div>
+
+    </section>
+    
+
+    </main>
+
+
+<footer>
+    <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
+            Online Learning</a></div>
+    <br>
+    <span id="modified"></span>
+</footer>
+<script src="scripts/preston-current.js"></script>
+<script src="scripts/preston-forecast.js"></script>
+</body>
+</html>
