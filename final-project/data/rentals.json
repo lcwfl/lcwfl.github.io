@@ -1,6 +1,5 @@
 {
-  "rentals": {
-    "rental": [
+  "rental": [
       {
         "id": "1",
         "rentalType": "~Honda Metro Scooter",
@@ -57,4 +56,3 @@
       }
     ]
   }
-}

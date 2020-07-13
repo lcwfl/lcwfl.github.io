@@ -1,4 +1,4 @@
-const requestURL = 'data/rentals.json';
+const requestURL = 'https://lcwfl.github.io/final-project/data/rentals.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
