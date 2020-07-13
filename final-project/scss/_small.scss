@@ -59,6 +59,8 @@ header {
 main {display: block; padding: 1rem $gutter;
     h1 {color:$primaryColor;
     font-weight: $heavyWeight;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
   
@@ -71,11 +73,26 @@ main {display: block; padding: 1rem $gutter;
 
 } //end of main
 
-
+//footer
 footer {
-    background-color: $primaryColor;
-    text-align: center;
-    padding: 1rem $gutter;
+    border-radius: 12px;
+    background-color: #0077b6;
+    height: 90px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-size: small ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+footer a:link {
+    color: darkblue;
+}
+footer a:visited{
+    color: white;
 }
 
 
