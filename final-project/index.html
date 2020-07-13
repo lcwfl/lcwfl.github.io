@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Comments go here -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Lance Wilson">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/weathersite.js"></script>
+    
+
+    <title>Scoots Rentals - Home</title>
+    <meta name="description"
+        content="Final Project for Lance Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+</head>
+<body onload="Index()">
+<header>
+    <img src="images/icon.png" id="icon" alt="FL Weather Tracker icon">
+    <section class="hdr">
+        <h1>Scoots</h1>
+        <div class="motto">"Getting you around town for less"</div>
+    </section>
+</header>
+<nav>
+    <ul class="navmenu">
+        <li><a class="hammenu" onclick="toggleMenu()" href="#">&#9776; Menu</a></li> 
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="preston.html">Rentals</a></li>
+        <li><a href="sodasprings.html">Reservations</a></li>
+        <li><a href="fishhaven.html">Tours</a></li>
+        <li><a href="stormcenter.html">Contact Us</a></li>
+        
+    </ul>
+</nav>
+
+   
+    <main>
+    <div class="cards"></div>
+    </main>
+
+
+<footer>
+    <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
+            Online Learning</a></div>
+    <br>
+    <span id="modified"></span>
+</footer>
+<script src="scripts/weatherapi.js"></script>
+</body>
+</html>
