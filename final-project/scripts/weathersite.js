@@ -1,38 +1,38 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'data/rentals.json';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        const cities = jsonObject['towns'];
+        const rentallist = jsonObject['rentals'];
 
-        for (let i = 0; i < cities.length; i++) {
-            if (cities[i].name == "Preston" || cities[i].name == "Fish Haven" || cities[i].name == "Soda Springs") {
-                let card = document.createElement('cities');
+        for (let i = 0; i < rentallist.length; i++) {
+            if (rentallist[i].id == "1" || rentallist[i].id == "2" || rentallist[i].id == "3" || rentallist[i].id == "4" || rentallist[i].id == "5" || rentallist[i].id == "6") {
+                let card = document.createElement('rentallist');
                 card.setAttribute('class', 'city')
-                let photo = document.createElement('img');
-                let name = document.createElement('h1');
-                let motto = document.createElement('h2');
-                let yearFounded = document.createElement('h3');
-                let currentPopulation = document.createElement('h4');
-                let averageRainfall = document.createElement('h5');
+                let rentaltype = document.createElement('h1');
+                let maxPersons = document.createElement('h2');
+                let reshalfday = document.createElement('h3');
+                let resfullday = document.createElement('h3');
+                let walkhalf = document.createElement('h3');
+                let walkfull = document.createElement('h3');
+                
 
                 //Main
-                photo.setAttribute('src', 'images/' + cities[i].photo);
-                photo.setAttribute('alt', cities[i].name);
-                name.textContent = cities[i].name;
-                motto.textContent = cities[i].motto;
-                yearFounded.textContent = 'Date of establishment: ' + cities[i].yearFounded;
-                currentPopulation.textContent = "Population: " + cities[i].currentPopulation;
-                averageRainfall.textContent = 'Annual rain rainfall: ' + cities[i].averageRainfall;
+                rentaltype.textContent = rentallist[i].rentaltype;
+                maxPersons.textContent = rentallist[i].maxPersons;
+                reshalfday.textContent = rentallist[i].reshalfday;
+                resfullday.textContent = rentallist[i].resfullday;
+                walkinhalf.textContent = rentallist[i].walkinhalf;
+                walkinfull.textContent = rentallist[i].walkinfull;
 
-                card.appendChild(photo);
-                card.appendChild(name);
-                card.appendChild(motto);
-                card.appendChild(yearFounded);
-                card.appendChild(currentPopulation);
-                card.appendChild(averageRainfall);
+                card.appendChild(rentaltype);
+                card.appendChild(maxPersons);
+                card.appendChild(reshalfday);
+                card.appendChild(resfullday);
+                card.appendChild(walkinhalf);
+                card.appendChild(walkinfull);
                 document.querySelector('div.cards').appendChild(card);
             }
         }

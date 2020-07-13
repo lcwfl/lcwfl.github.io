@@ -15,74 +15,44 @@
     <script src="scripts/weathersite.js"></script>
     
 
-    <title>FL Weather Tracker</title>
-    <meta name="description"
-        content="Base website for the Weather Site Project for Lance Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Scoots Rentals - Contact Us</title>
+    <meta name="description" content="Final Project for Lance Wilson in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
 </head>
 <body onload="Index()">
 <header>
-    <img src="images/icon.png" id="icon" alt="FL Weather Tracker icon">
-    <section class="hdr">
-        <h1>FL Weather Tracker</h1>
-        <div class="motto">"Weather information on your terms"</div>
+    <img src="images/icon.png" id="icon" alt="Scoots icon">
+    <section class="header">
+        <h1>Scoots</h1>
+        <div class="motto">"Getting you around town for less"</div>
     </section>
 </header>
 <nav>
     <ul class="navmenu">
         <li><a class="hammenu" onclick="toggleMenu()" href="#">&#9776; Menu</a></li> 
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="contactus.html" class="active">Contact Us</a></li>
+        
     </ul>
 </nav>
 
    
     <main>
-    <h2>Storm Center</h2>
+    <h2>Contact Us</h2>
     <form method="GET" action="thanks.html">
         <fieldset>
             <legend>Contact Information</legend>
             <label class="contactinfo">Full Name: <input type="text" name="name" title="Letters only, atleast six characters please" pattern="[A-Za-z\s]{5,}" required></label>
             <label class="contactinfo">Telephone: <input type="tel" name="telephone" title="Numbers only, atleast 10 characters please" pattern="[0-9]{10,}" placeholder="1235551231" required></label>
             <label class="contactinfo">Zip Code: <input type="number" name="zipcode" required></label>
-            <label class="contactinfo">Email Address: <input type="email" name="email" placeholder="stormreport@flwtracker.com"></label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Storm Information</legend>
-            <label class="storminfo">Storm Date: <input type="date" name="date" ></label>
-            <label class="storminfo">Storm Type: <input list="stormType" sname="stormType" ></label>
-            <datalist id="stormType">
-                <option value="Flash Flood">
-                <option value="Hail">
-                <option value="Hurricane">
-                <option value="Thunderstorm">
-                <option value="Tornado">
-            </datalist>
-            <label class="storminfo" for="rating">Storm Severity: &nbsp;&nbsp;&nbsp;
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="updateRating(this.value)" onchange="updateRating(this.value)">
-                        <span id="ratingvalue">5</span>
-            </label>
-            <label class="storminfo">Storm Region:
-                <select name="region">
-                    <option value="" selected disabled>Select Region...</option>
-                    <option value="preston">Preston</option>
-                    <option value="soda springs">Soda Springs</option>
-                    <option value="fish haven">Fish Haven</option>
-                </select>
-            </label>
-            <div>Are you in danger:</div>
-            <label class="radiochoice"><input type="radio" name="level" value="yes"><span class="options">Yes</span></label>
-            <label class="radiochoice"><input type="radio" name="level" value="maybe"><span class="options">Maybe</span></label>
-            <label class="radiochoice"><input type="radio" name="level" value="no"><span class="options">No</span></label>
+            <label class="contactinfo">Email Address: <input type="email" name="email" placeholder="letsgoscooting@scooters.com"></label>
             <p></p>
             <label class="contactinfo">Comments:</label>
-            <textarea name="comments" id="comments"></textarea>
+            <textarea name="comments" id="comments" style="width: 528px; height: 139;"></textarea>
         </fieldset>
-        <input type="submit" value='Report Storm' class="reportbutton">
+        <input type="submit" value='Reservation Inquiry' class="reportbutton">
     </form>
 
 </main>
@@ -94,6 +64,6 @@
     <br>
     <span id="modified"></span>
 </footer>
-<script src="scripts/weatherapi.js"></script>
+
 </body>
 </html>

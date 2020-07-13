@@ -1,0 +1,80 @@
+
+@media only screen and (min-width: 900px){
+ 
+    
+    header img{
+        width: 100%;
+ }
+ nav button {
+     display: none
+    }
+
+ .headings h1{
+     font-size: 48px
+ }
+ .motto{
+     letter-spacing: 1.5pt;
+     font-size: medium;
+     margin-left: 17px;
+ }    	
+ .navmenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.navmenu li {
+    display: flex; 
+    flex: 1 1 100%;
+   
+}
+.navmenu a {
+    text-align: center;
+}
+.navmenu li:first-child {
+    display: none;
+}
+
+nav ul{
+    display: flex;
+}
+nav li{
+    flex: 1 1 100%;
+} 
+.city h2 {
+    font-size: 15px;
+}
+
+.city p {
+    font-size: 14.5px;
+}
+
+.city {
+    width: 93%;
+    margin: auto;
+    padding: 10px;
+}
+.city:nth-child(1){
+    grid-row: 1;
+    grid-column: 3;
+
+}
+
+.cards {
+    max-width: 1188px;
+    margin: 50px auto 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.city img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+}
