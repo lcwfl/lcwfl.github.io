@@ -11,6 +11,7 @@ Body {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
+    background-color: whitesmoke;
     }
  
 h1, h2, h3, h4, h5 {
@@ -223,59 +224,6 @@ figcaption {
 .galtitle {
     text-align: center;
 }
-.city h1, .city h2, .city h3, .city h4, .city h5 {
-    text-align: center;
-}
-
-.city h1 {
-    font-size: 32px;
-    font-variant: none;
-}
-
-.city h2 {
-    text-shadow: transparent 3px 3px 5px;
-    font-size: 18px;
-    margin-bottom: 35px;
-
-}
-
-.city h3, .city h4, .city h5 {
-    text-shadow: transparent 3px 3px 5px;
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
-    line-height: .3em;
-}
-
-.city h5 {
-    margin-top: -1px;
-}
-
-.city img {
-    width: 100%;
-}
-
-.city {
-    width: 85%;
-    margin: auto;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: cornflowerblue;
-}
-
-.cards {
-    margin-top: 50px;
-    margin-bottom: 70px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
-}
-
-.city:nth-child(1) {
-    grid-row: 3;
-
-}
 #imagesrc, #imagesrc2, #imagesrc3, #imagesrc4, #imagesrc5 {
     display: none;
 }
@@ -346,4 +294,18 @@ form label.contactinfo input:required:valid {
 #comments {
     height: 80px;
     width: 200px;
+}
+td{
+    text-align: center;
+}
+th{
+    font-size: medium;
+    
+}
+table{
+    background-color: #ddfff7;
+}
+.rentals li{
+    list-style-type: square;
+    display: list-item;
 }

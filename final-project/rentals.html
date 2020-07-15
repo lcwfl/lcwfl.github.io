@@ -40,29 +40,91 @@
 
    
     <main>
-        <div class="cards"></div>
-        <table border="1">
-            <tr>
-            <th scope="row">Max Persons and Price Chart (includes Tx)</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Reservation</td>
-                <td>Walk-In</td>
-            </tr>
-            <tr>
+        <h1>Rental Information</h1>
+        <p>
+            This page will help you decide which of our offerings is best suited for your activities.
+        </p>
+        <h2>Types of Rentals</h2>
+       <div class="rentals">
+        <p>Honda Motor Scooters</p>
+            <ul class="rentalinfo">
+                <li>Honda Metropolitan (49cc) - 1 Person</li>    
+                <li>Honda Dio (110cc) - 2 Person</li>
+                <li>Honda PCX150 (149cc) - 2 Person</li>
+            </ul>
+        
+        <p>ATV Side-by-Side</p>
+            <ul class="rentalinfo">
+                <li>Honda Pioneer 1000</li>
+            </ul>
+        <p>Jeep Rentals</p>
+            <ul class="rentalinfo">
+                <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>  
+            </ul>
+        </div>
+        <table id="restable" class="table" border="thick">
+            <thead>
+                <tr>
+                <th colspan="6" class="restablehead">Max Persons and Proce Chart (includes Tax)</th>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
                 <th>Rental Type</th>
                 <th>Max. Persons</th>
-                <th>Half Day (3 hrs)</th>
+                <th>Half Day <br>(3 hrs)</th>
                 <th>Full Day</th>
-                <th>Half Day (3 hrs) </th>
+                <th>Half Day <br>(3 hrs)</th>
                 <th>Full Day</th>
-            </tr>
+            </thead>
+           
+            <tbody>
+                <!-- Data is loaded from the Javascript below -->
+            </tbody>
         </table>
         
     </main>
-
+    <script type="text/javascript">
+        const restableBody = document.querySelector("#restable > tbody");
+    
+       function loadRentals(){
+           const request = new XMLHttpRequest();
+           request.open("get", "data/rentalinfo.json");
+           request.onload = () => {
+               try {
+                   const jsoninfo = JSON.parse(request.responseText); 
+                    populateRental(jsoninfo);
+                    }
+                   catch (e) {
+                       console.warn("JSON File Not Loaded");
+                   }
+            };
+            request.send();
+       }
+       function populateRental(jsoninfo){
+        //Clean the table first   
+        while (restableBody.firstChild){
+               restableBody.removeChild(restableBody.firstChild);
+           }
+           //Build the table now
+           jsoninfo.forEach((row) => {
+               const tr = document.createElement("tr");
+               row.forEach((cell) => {
+                   const td = document.createElement("td");
+                   td.textContent = cell;
+                   tr.appendChild(td);
+                
+               });
+               restableBody.appendChild(tr);
+               
+           });
+       }
+      
+       document.addEventListener("DOMContentLoaded", () => {loadRentals();});
+    </script>
 
 <footer>
     <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
