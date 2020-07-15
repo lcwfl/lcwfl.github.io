@@ -5,24 +5,24 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        const rentallist = jsonObject['rentals'];
+        const rentallist = jsonObject['rental'];
 
         for (let i = 0; i < rentallist.length; i++) {
-            if (rentallist[i].id == "1" || rentallist[i].id == "2" || rentallist[i].id == "3" || rentallist[i].id == "4" || rentallist[i].id == "5" || rentallist[i].id == "6") {
+           
                 let card = document.createElement('rentallist');
                 card.setAttribute('class', 'city')
                 let rentaltype = document.createElement('h1');
                 let maxPersons = document.createElement('h2');
                 let reshalfday = document.createElement('h3');
                 let resfullday = document.createElement('h3');
-                let walkhalf = document.createElement('h3');
-                let walkfull = document.createElement('h3');
+                let walkinhalf = document.createElement('h3');
+                let walkinfull = document.createElement('h3');
                 
 
                 //Main
-                rentaltype.textContent = rentallist[i].rentaltype;
-                maxPersons.textContent = rentallist[i].maxPersons;
-                reshalfday.textContent = rentallist[i].reshalfday;
+                rentaltype.textContent = 'Rental Type:' + rentallist[i].rentalType;
+                maxPersons.textContent = 'Max Persons:' + rentallist[i].maxPersons;
+                reshalfday.textContent = 'Half Day Rental Reservation:' + rentallist[i].reshalfday;
                 resfullday.textContent = rentallist[i].resfullday;
                 walkinhalf.textContent = rentallist[i].walkinhalf;
                 walkinfull.textContent = rentallist[i].walkinfull;
@@ -34,7 +34,7 @@ fetch(requestURL)
                 card.appendChild(walkinhalf);
                 card.appendChild(walkinfull);
                 document.querySelector('div.cards').appendChild(card);
-            }
+            
         }
     });
   /*

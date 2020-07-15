@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/large.css">
     <script src="scripts/functions.js"></script>
-    <script src="scripts/weathersite.js"></script>
+   
     
 
     <title>Scoots Rentals - Rentals</title>
@@ -40,29 +40,51 @@
 
    
     <main>
-        <div class="cards"></div>
-        <table border="1">
-            <tr>
-            <th scope="row">Max Persons and Price Chart (includes Tx)</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Reservation</td>
-                <td>Walk-In</td>
-            </tr>
-            <tr>
+        <table class="table">
+            <thead>
                 <th>Rental Type</th>
-                <th>Max. Persons</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-                <th>Half Day (3 hrs) </th>
-                <th>Full Day</th>
-            </tr>
+                <th>Max Persons</th>
+                <th>Reservation Half Day</th>
+                <th>Reservation Full Day</th>
+                <th>Walk-In Half Day</th>
+                <th>Walk-In Full Day</th>
+            </thead>
+            <tbody id="data"></tbody>
+
         </table>
         
     </main>
+<script>
+    fetch("https://lcwfl.github.io/final-project/data/rentals.json").then(
+        res=>{
+            res.json().then(
+                data=>{
+                    console.log(data);
+                    if(data.length > 0){
+                        var temp = "";
+                      data.array.forEach((u) => {
+                          temp += "<tr>";
+                          temp += "<td>"+u.rentalType+"</td>";
+                          temp += "<td>"+u.maxPersons+"</td>";
+                          temp += "<td>"+u.reshalfday+"</td>";
+                          temp += "<td>"+u.resfullday+"</td>";
+                          temp += "<td>"+u.walkinhalf+"</td>";
+                          temp += "<td>"+u.walkinfull+"</td></tr>";
+                      })  
+                      document.getElementById("data").innerHTML = temp;
+                    }
+                }
+            )
 
+
+
+        }
+
+
+    )
+
+
+</script>
 
 <footer>
     <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
