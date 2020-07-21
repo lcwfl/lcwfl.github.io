@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="styles/medium.css">
     <link rel="stylesheet" type="text/css" href="styles/large.css">
     <script src="scripts/functions.js"></script>
-    <script src="scripts/weathersite.js"></script>
+
     
 
     <title>Scoots Rentals - Reservations</title>
@@ -39,18 +39,65 @@
 
    
     <main>
-    <p>
-        Placeholder Data
-    </p>
+    <section class="reslim">
+        <h2>All rentals are subject to the following restrictions and limitations:</h2>
+        <ul class="resol">
+            <li class="resil">A $50 security deposit is required to confirm reservations</li>
+            <li class="resil">A valid drivers license is required in hand at time of rental</li>
+            <li class="resil">No one under 12 years of age are allowed to ride on the scooters</li>
+            <li class="resil">Fuel charge not included</li>
+            <li class="resil">Unlimited mileage</li>
+            <li class="resil">Liablity insurance is free of charge</li>
+            <li class="resil">Reservations rate requires 24 hours notification</li>
+            <li class="resil">Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals</li>
+            <li class="resil">Payment via Google Pay, cash, credit card, debit card, or PayPal</li>
+            <li class="resil">Rentals may be returned to either location</li>
+        </ul>
+    </section>
+
+
+    <form method="GET" action="resconfirmation.html" class="resform">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label class="rescontact">Full Name: <input type="text" name="name" title="Letters only, atleast six characters please" pattern="[A-Za-z\s]{5,}" required></label>
+            <label class="rescontact">Telephone: <input type="tel" name="telephone" title="Numbers only, atleast 10 characters please" pattern="[0-9]{10,}" placeholder="1235551231" required></label>
+            <label class="rescontact">Home Country/State: <input type="text" name="home" required></label>
+            <label class="rescontact">Rental Type: <select name="rentaltype" id="rentaltype"></label>
+                <option selected>Rental Requested</option>
+                <option value="hmscoot">Honda Metro Scooter</option>
+                <option value="hdscoot">Honda Dio Scooter</option>
+                <option value="hpcxscoot">Honda PCX150 Scooter</option>
+                <option value="hpatv">Honda Pioneer ATV</option>
+                <option value="jeep4dr">Jeep Wrangler - 4 door with A/C</option>
+                <option value="jeep2dr">Jeep Wrangler - 2 door</option>
+            </select>
+            <label class="rescontact">Start Date: <input type="date" name="start_date" required></label>
+            <label class="rescontact">End Date: <input type="date" name="end_date" required></label>
+            <label class="rescontact">Email Address: <input type="email" name="email" placeholder="letsgoscooting@scooters.com"></label>
+            <label class="rescontact">Cruiseline (if applicable): <select name="cruiseline" onchange="Checkcruiseline(this.value);"></label>
+                <option selected>Choose your cruiseline</option>
+                <option value="disney">Disney</option>
+                <option value="carnival">Carnival</option>
+                <option value="ncl">NCL</option>
+                <option value="other">Other Cruiseline</option>
+                <option value="na">N/A</option>
+            </select>
+                <input type="text" name="othercruiseline" id="othercruiseline" style="display: none;" />
+            <p></p>
+            <label class="rescontact">Special Request/Comments:</label>
+            <textarea name="specialrequest" id="specialrequest" style="width: 300px; height: 160px;"></textarea>
+        </fieldset>
+        <input type="submit" value='Submit Reservation' class="reportbutton">
+    </form>
     </main>
 
 
-<footer>
-    <div> &copy; <span id="copy"></span>| Lance Wilson | Florida | <a href="https://www.byui.edu/online" target="_blank" >BYUI
-            Online Learning</a></div>
-    <br>
-    <span id="modified"></span>
-</footer>
-<script src="scripts/weatherapi.js"></script>
+    <footer>
+        <div> &copy; <span id="copy"></span> | Lance Wilson | <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png"></a> | <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"></a>
+            | <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png"></a>
+        </div>
+        <br>
+        <span id="modified"></span>
+    </footer>
 </body>
 </html>
