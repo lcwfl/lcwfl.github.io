@@ -152,6 +152,11 @@ h2{
     grid-template-columns: 1fr 1fr;
     
 }
+#contactferry{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 .gmap{
     grid-column: 1/3;
     grid-row: 2;
@@ -342,12 +347,17 @@ th{
     font-size: medium;
     
 }
-table{
+table, th, td{
     background-color: #ddfff7;
+    border: 1px solid black;
+    outline: thick;
 }
 .rentals li{
     list-style-type: square;
     display: list-item;
+}
+.nolitype{
+    list-style: none !important;
 }
 .button-wrapper {
     display: block;

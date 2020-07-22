@@ -62,7 +62,7 @@
             <label class="rescontact">Full Name: <input type="text" name="name" title="Letters only, atleast six characters please" pattern="[A-Za-z\s]{5,}" required></label>
             <label class="rescontact">Telephone: <input type="tel" name="telephone" title="Numbers only, atleast 10 characters please" pattern="[0-9]{10,}" placeholder="1235551231" required></label>
             <label class="rescontact">Home Country/State: <input type="text" name="home" required></label>
-            <label class="rescontact">Rental Type: <select name="rentaltype" id="rentaltype"></label>
+            <label class="rescontact">Rental Type: <select name="rentaltype" id="rentaltype">
                 <option selected>Rental Requested</option>
                 <option value="hmscoot">Honda Metro Scooter</option>
                 <option value="hdscoot">Honda Dio Scooter</option>
@@ -70,18 +70,18 @@
                 <option value="hpatv">Honda Pioneer ATV</option>
                 <option value="jeep4dr">Jeep Wrangler - 4 door with A/C</option>
                 <option value="jeep2dr">Jeep Wrangler - 2 door</option>
-            </select>
+            </select></label>
             <label class="rescontact">Start Date: <input type="date" name="start_date" required></label>
             <label class="rescontact">End Date: <input type="date" name="end_date" required></label>
             <label class="rescontact">Email Address: <input type="email" name="email" placeholder="letsgoscooting@scooters.com"></label>
-            <label class="rescontact">Cruiseline (if applicable): <select name="cruiseline" onchange="Checkcruiseline(this.value);"></label>
+            <label class="rescontact">Cruiseline (if applicable): <select name="cruiseline" onchange="Checkcruiseline(this.value);">
                 <option selected>Choose your cruiseline</option>
                 <option value="disney">Disney</option>
                 <option value="carnival">Carnival</option>
                 <option value="ncl">NCL</option>
                 <option value="other">Other Cruiseline</option>
                 <option value="na">N/A</option>
-            </select>
+            </select></label>
                 <input type="text" name="othercruiseline" id="othercruiseline" style="display: none;" />
             <p></p>
             <label class="rescontact">Special Request/Comments:</label>
@@ -91,10 +91,9 @@
     </form>
     </main>
 
-
     <footer>
-        <div> &copy; <span id="copy"></span> | Lance Wilson | <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png"></a> | <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"></a>
-            | <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png"></a>
+        <div> &copy; <span id="copy"></span> | Lance Wilson | <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png" alt="fb"></a> | <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="tw"></a>
+            | <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" alt="ig"></a>
         </div>
         <br>
         <span id="modified"></span>
